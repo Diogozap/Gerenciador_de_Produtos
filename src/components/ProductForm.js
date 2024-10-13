@@ -35,7 +35,6 @@ const ProductForm = ({ fetchProdutos }) => {
         }
     };
 
-    
     return (
         <div className="container">
             <form onSubmit={handleSubmit}>
