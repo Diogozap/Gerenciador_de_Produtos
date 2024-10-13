@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom"; // Importando Link para navegação
+import { Link } from "react-router-dom"; 
 
 const ProductList = ({ produtos, fetchProdutos }) => {
-    // Recebendo produtos como prop
     const [error, setError] = React.useState(null);
 
     useEffect(() => {
-        fetchProdutos(); // Chama a função para buscar produtos ao montar o componente
+        fetchProdutos(); 
     }, [fetchProdutos]);
 
     if (error) {
@@ -36,4 +35,4 @@ const ProductList = ({ produtos, fetchProdutos }) => {
     );
 };
 
-export default ProductList; // Exporta o componente
+export default ProductList;
