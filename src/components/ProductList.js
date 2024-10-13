@@ -13,7 +13,6 @@ const ProductList = ({ produtos, fetchProdutos }) => {
         return <div>{error}</div>;
     }
 
-   
     return (
         <div className="container">
             <h1>Lista de Produtos</h1>
