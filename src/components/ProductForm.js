@@ -35,47 +35,50 @@ const ProductForm = ({ fetchProdutos }) => {
         }
     };
 
+    
     return (
-        <form onSubmit={handleSubmit}>
-            <h2>Adicionar Produto</h2>
-            <div>
-                <label>Nome:</label>
-                <input
-                    type="text"
-                    value={nome}
-                    onChange={(e) => setNome(e.target.value)}
-                    required
-                />
-            </div>
-            <div>
-                <label>Categoria:</label>
-                <input
-                    type="text"
-                    value={categoria}
-                    onChange={(e) => setCategoria(e.target.value)}
-                    required
-                />
-            </div>
-            <div>
-                <label>Preço:</label>
-                <input
-                    type="number"
-                    value={preco}
-                    onChange={(e) => setPreco(e.target.value)}
-                    required
-                />
-            </div>
-            <div>
-                <label>Quantidade em Estoque:</label>
-                <input
-                    type="number"
-                    value={quantidadeEmEstoque}
-                    onChange={(e) => setQuantidadeEmEstoque(e.target.value)}
-                    required
-                />
-            </div>
-            <button type="submit">Cadastrar Produto</button>
-        </form>
+        <div className="container">
+            <form onSubmit={handleSubmit}>
+                <h2>Adicionar Produto</h2>
+                <div>
+                    <label>Nome:</label>
+                    <input
+                        type="text"
+                        value={nome}
+                        onChange={(e) => setNome(e.target.value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <label>Categoria:</label>
+                    <input
+                        type="text"
+                        value={categoria}
+                        onChange={(e) => setCategoria(e.target.value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <label>Preço:</label>
+                    <input
+                        type="number"
+                        value={preco}
+                        onChange={(e) => setPreco(e.target.value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <label>Quantidade em Estoque:</label>
+                    <input
+                        type="number"
+                        value={quantidadeEmEstoque}
+                        onChange={(e) => setQuantidadeEmEstoque(e.target.value)}
+                        required
+                    />
+                </div>
+                <button type="submit">Cadastrar Produto</button>
+            </form>
+        </div>
     );
 };
 
